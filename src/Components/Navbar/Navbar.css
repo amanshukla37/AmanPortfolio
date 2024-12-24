@@ -1,0 +1,126 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin: 0px 170px; */
+  margin: 10px 10%;
+}
+/* .name-aman {
+  color: #da7c25;
+  width: auto;
+  transition: 0.5s;
+} */
+.footer-logo {
+  margin-top: 20px;
+  height: 70px;
+  width: 30px;
+
+  /* border-radius: 48px; */
+}
+.footer-logo:hover {
+  /* border-radius: 45px; */
+  /* border: 2px solid gray; */
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+  font-size: 16px;
+}
+
+.ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+
+.nav-connect {
+  padding: 15px 20px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #7b2cbf, #9d4edd, #c77dff);
+
+  /* background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%); */
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.nav-connect:hover {
+  transform: scale(1.05);
+}
+.name-aman:hover {
+  transform: scale(1.55);
+}
+.nav-menu li {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.nav-menu li img {
+  display: flex;
+  margin: auto;
+}
+.anchor-link {
+  text-decoration: none;
+  color: white;
+}
+.nav-mob-close {
+  display: none;
+  cursor: pointer;
+}
+.nav-mob-open {
+  display: none;
+  cursor: pointer;
+  width: 30px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    margin: 20px 6%;
+  }
+  .nav-connect {
+    display: none;
+  }
+  .nav-mob-open {
+    display: block;
+    position: absolute;
+    right: 30px;
+  }
+  .nav-mob-close {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 7%;
+    width: 30px;
+  }
+
+  .navbar ul {
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    top: 0;
+    gap: 30px;
+    background-color: #1f0016;
+    width: 300px;
+    height: 100%;
+    z-index: 2;
+    transition: right 0.5s;
+    right: -300px;
+    padding-top: 100px;
+  }
+  .nav-menu li {
+    font-size: 22px;
+    padding-left: 50px;
+    flex-direction: row;
+    gap: 20px;
+  }
+}
